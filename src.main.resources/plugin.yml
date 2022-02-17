@@ -9,3 +9,8 @@ main: com.ironboundred.bedhomes.BedHomes
 commands:
  home:
   description: teleport to you beds location.
+
+permissions:
+ bedhome.time.bypass:
+  description: used to bypass the timed teleport when enabled.
+  default: op
