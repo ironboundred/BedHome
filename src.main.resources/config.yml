@@ -1,0 +1,5 @@
+#Should users wait to be teleported
+UseWaitTime: true
+
+#Time in seconds players must wait before teleport
+WaitTime: 5

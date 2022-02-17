@@ -1,0 +1,11 @@
+version: ${version}
+name: ${project.name}
+description: Adds a home command that is set to the players respawn location.
+author: Ironboundred
+api-version: 1.16
+
+main: com.ironboundred.bedhomes.BedHomes
+
+commands:
+ home:
+  description: teleport to you beds location.
