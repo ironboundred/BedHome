@@ -41,7 +41,7 @@ public class HomeCommand implements CommandExecutor {
       }
     }else {
       player.sendMessage(ChatColor.GREEN
-          + "You have not set a spawn loacation yet! You need to click on a bed to set your home.");
+          + "You have not set a spawn location yet! You need to click on a bed to set your home.");
       return true;
     }
     
