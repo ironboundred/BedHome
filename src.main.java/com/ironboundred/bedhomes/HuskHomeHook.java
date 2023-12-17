@@ -18,14 +18,10 @@ public class HuskHomeHook {
     public void teleportPlayer(Player player, Location location) {
         OnlineUser onlineUser = huskHomesAPI.adaptUser(player);
 
-        Position position = Position.at(location.getX(), location.getY(), location.getZ(),
-                World.from(location.getWorld().getName(), location.getWorld().getUID()),
-                onlineUser.getPosition().getServer());
-
         try {
             huskHomesAPI.teleportBuilder()
                     .teleporter(onlineUser)
-                    .target(position)
+                    .target(huskHomesAPI.adaptPosition(location, onlineUser.getPosition().getServer()))
                     .toTimedTeleport()
                     .execute();
         }catch (TeleportationException e) {

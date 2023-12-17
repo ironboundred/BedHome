@@ -3,6 +3,8 @@ name: ${project.name}
 description: Adds a home command that is set to the players respawn location.
 author: Ironboundred
 api-version: 1.16
+softdepend:
+ - HuskHomes
 
 main: com.ironboundred.bedhomes.BedHomes
 

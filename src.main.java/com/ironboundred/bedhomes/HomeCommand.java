@@ -25,7 +25,7 @@ public class HomeCommand implements CommandExecutor {
         BedHomes.getInstance().huskHomesHook.teleportPlayer(player, loc);
         return true;
       }
-      
+
       if(!BedHomes.getInstance().getConfig().getBoolean("UseWaitTime")) {
         player.sendMessage(ChatColor.YELLOW + "Teleporting to your home...");
         player.teleportAsync(loc, TeleportCause.PLUGIN);
