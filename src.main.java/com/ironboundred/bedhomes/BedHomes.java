@@ -21,7 +21,7 @@ public class BedHomes extends JavaPlugin {
 
     instance.saveDefaultConfig();
     
-    instance.getCommand("home").setExecutor(new HomeCommand());
+    instance.getCommand("bed").setExecutor(new HomeCommand());
     
     logger.info(instance.getName() + " has been enabled!");
   }

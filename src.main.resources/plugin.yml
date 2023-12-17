@@ -7,7 +7,7 @@ api-version: 1.16
 main: com.ironboundred.bedhomes.BedHomes
 
 commands:
- home:
+ bed:
   description: teleport to you beds location.
 
 permissions:
