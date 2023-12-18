@@ -2,7 +2,10 @@ package com.ironboundred.bedhomes;
 
 import java.util.logging.Logger;
 
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.jetbrains.annotations.NotNull;
 
 
 public class BedHomes extends JavaPlugin {
@@ -22,7 +25,7 @@ public class BedHomes extends JavaPlugin {
 
     instance.saveDefaultConfig();
     
-    instance.getCommand("bed").setExecutor(new HomeCommand());
+    instance.getServer().getCommandMap().register("bed", new HomeCommand());
 
     if (instance.getServer().getPluginManager().getPlugin("HuskHomes") != null) {
       this.huskHomesHook = new HuskHomeHook();
