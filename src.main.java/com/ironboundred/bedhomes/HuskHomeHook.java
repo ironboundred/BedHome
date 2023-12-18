@@ -21,7 +21,7 @@ public class HuskHomeHook {
         try {
             huskHomesAPI.teleportBuilder()
                     .teleporter(onlineUser)
-                    .target(huskHomesAPI.adaptPosition(location, onlineUser.getPosition().getServer()))
+                    .target(huskHomesAPI.adaptPosition(location))
                     .toTimedTeleport()
                     .execute();
         }catch (TeleportationException e) {
