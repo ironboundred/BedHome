@@ -19,7 +19,7 @@ public class HomeCommand extends Command {
 
   public HomeCommand() {
     super("bed", "teleport to you beds location", "/bed", new ArrayList<>());
-    super.setPermission("bedhome.time.bypass");
+    super.setPermission("bedhome.command.bed");
   }
 
   @Override
