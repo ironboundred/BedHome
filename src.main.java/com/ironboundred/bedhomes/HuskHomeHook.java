@@ -4,6 +4,7 @@ import net.william278.huskhomes.api.HuskHomesAPI;
 import net.william278.huskhomes.position.Position;
 import net.william278.huskhomes.position.World;
 import net.william278.huskhomes.teleport.TeleportationException;
+import net.william278.huskhomes.user.CommandUser;
 import net.william278.huskhomes.user.OnlineUser;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
@@ -25,7 +26,7 @@ public class HuskHomeHook {
                     .toTimedTeleport()
                     .execute();
         }catch (TeleportationException e) {
-            e.printStackTrace();
+            e.displayMessage(onlineUser);
         }
     }
 }
